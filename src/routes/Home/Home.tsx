@@ -6,6 +6,7 @@ import { Button } from 'components/Button';
 
 import { routesMap } from 'routes/routesMap';
 import { messages } from './messages';
+import { StyledContainer } from './styles';
 
 export const Home: FC = () => {
   const navigate = useNavigate();
@@ -17,7 +18,9 @@ export const Home: FC = () => {
   return (
     <>
       <Logo />
-      <Button onClick={handleButtonClick} text={messages.buttonText} />
+      <StyledContainer>
+        <Button onClick={handleButtonClick} text={messages.buttonText} />
+      </StyledContainer>
     </>
   );
 };

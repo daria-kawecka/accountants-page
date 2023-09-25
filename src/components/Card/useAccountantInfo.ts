@@ -1,5 +1,5 @@
 import { messages } from 'components/Card/messages';
-import { AccountantType } from '../../routes/Accountants/types';
+import { AccountantType } from 'routes/Accountants/types';
 
 export const useAccountantInfo = (accountant: AccountantType) => {
   const yourAccountant =
