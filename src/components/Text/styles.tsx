@@ -1,14 +1,6 @@
 import { styled } from 'styled-components';
 import { Colors, FontSizes, FontWeights } from 'theme/types';
 
-interface TextProps {
-  content: string;
-  size: string; // Adjust the type to match your theme's font sizes
-  color: string; // Adjust the type to match your theme's color types
-  weight?: string; // Adjust the type for weight as needed
-  withUnderline?: boolean;
-}
-
 export const StyledText = styled('p').withConfig({
   shouldForwardProp: (prop: string) =>
     !['weight', 'withUnderline'].includes(prop),
