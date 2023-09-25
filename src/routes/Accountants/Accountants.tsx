@@ -5,6 +5,7 @@ import { Logo } from 'components/Logo';
 import { Button } from 'components/Button';
 import { useAccountantsData } from './hook';
 import { messages } from './messages';
+import { FadeLoader } from 'react-spinners';
 
 export const Accountants: FC = () => {
   const [page, setPage] = useState(1);
@@ -20,7 +21,7 @@ export const Accountants: FC = () => {
   return (
     <>
       <Logo />
-      {isLoading && <div>Loading</div>}
+      {isLoading && <FadeLoader color='#1E88E5' />}
       {isError && <div>Coś poszło nie tak...</div>}
       {accountantsData && shouldRenderCards && (
         <>
