@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/accountants-page/static/css/main.e4312170.css",
+    "main.js": "/accountants-page/static/js/main.70b8f642.js",
+    "index.html": "/accountants-page/index.html",
+    "main.e4312170.css.map": "/accountants-page/static/css/main.e4312170.css.map",
+    "main.70b8f642.js.map": "/accountants-page/static/js/main.70b8f642.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4312170.css",
+    "static/js/main.70b8f642.js"
+  ]
+}
