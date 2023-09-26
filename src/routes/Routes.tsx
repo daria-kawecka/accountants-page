@@ -2,7 +2,7 @@ import { FC } from 'react';
 import {
   Routes as ReactRoutes,
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
 } from 'react-router-dom';
 import { routesMap } from './routesMap';
 import { Home } from './Home';
