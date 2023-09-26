@@ -1,4 +1,4 @@
-import { FontSizes, Colors, FontWeights } from 'theme/types';
+import { Colors, FontSizes, FontWeights } from 'theme/types';
 
 export type TextProps = {
   content: string;

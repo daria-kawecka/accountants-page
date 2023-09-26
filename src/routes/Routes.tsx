@@ -4,10 +4,11 @@ import {
   Route,
   HashRouter as Router,
 } from 'react-router-dom';
-import { routesMap } from './routesMap';
-import { Home } from './Home';
-import { Accountants } from './Accountants';
+
 import { Accountant } from './Accountant';
+import { Accountants } from './Accountants';
+import { Home } from './Home';
+import { routesMap } from './routesMap';
 
 export const Routes: FC = () => {
   return (

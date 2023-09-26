@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
-import { AccountantResponseType } from './types';
+
 import { INITIAL_ACCOUNTANTS_RESPONSE } from './constants';
+import { AccountantResponseType } from './types';
 
 export const useAccountantsData = (page: number) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -14,7 +15,7 @@ export const useAccountantsData = (page: number) => {
     setIsError(false);
 
     fetch(
-      `https://randomuser.me/api/?seed=infakt&gender=female&results=5&page=${page}`
+      `https://randomuser.me/api/?seed=infakt&gender=female&results=5&page=${page}`,
     )
       .then((response) => response.json())
       .then((data) => {
@@ -25,7 +26,10 @@ export const useAccountantsData = (page: number) => {
 
         setIsLoading(false);
       })
-      .catch((error) => setIsError(true));
+      .catch((error) => {
+        setIsError(true);
+        console.error(error);
+      });
   }, [page]);
 
   useEffect(() => {

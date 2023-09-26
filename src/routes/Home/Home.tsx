@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { Logo } from 'components/Logo';
 import { Button } from 'components/Button';
-
+import { Logo } from 'components/Logo';
 import { routesMap } from 'routes/routesMap';
+
 import { messages } from './messages';
 import { StyledContainer } from './styles';
 

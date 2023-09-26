@@ -1,6 +1,7 @@
 import { FC } from 'react';
-import { AvatarProps } from './types';
+
 import { StyledImage } from './styles';
+import { AvatarProps } from './types';
 
 export const Avatar: FC<AvatarProps> = ({
   imgSrc,

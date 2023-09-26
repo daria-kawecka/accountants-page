@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { StyledText } from './styles';
 import { TextProps } from './types';
 

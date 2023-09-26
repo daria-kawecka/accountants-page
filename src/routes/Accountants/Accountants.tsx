@@ -1,11 +1,13 @@
-import { Card } from 'components/Card';
 import { FC, useMemo, useState } from 'react';
-import { CardsContainer } from './styles';
-import { Logo } from 'components/Logo';
+import { FadeLoader } from 'react-spinners';
+
 import { Button } from 'components/Button';
+import { Card } from 'components/Card';
+import { Logo } from 'components/Logo';
+
 import { useAccountantsData } from './hook';
 import { messages } from './messages';
-import { FadeLoader } from 'react-spinners';
+import { CardsContainer } from './styles';
 
 export const Accountants: FC = () => {
   const [page, setPage] = useState(1);

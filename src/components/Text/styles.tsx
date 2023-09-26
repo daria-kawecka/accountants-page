@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+
 import { Colors, FontSizes, FontWeights } from 'theme/types';
 
 export const StyledText = styled('p').withConfig({

@@ -1,20 +1,20 @@
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { CardProps } from './types';
-import {
-  StyledContainer,
-  TopContainer,
-  HeaderContainer,
-  DescriptionContainer,
-  StyledTextContainer,
-} from './styles';
-import { messages } from './messages';
-
 import { Avatar } from 'components/Avatar';
-import { Text } from 'components/Text/Text';
-import { useAccountantInfo } from 'components/Card/useAccountantInfo';
 import { Button } from 'components/Button';
+import { useAccountantInfo } from 'components/Card/useAccountantInfo';
+import { Text } from 'components/Text/Text';
+
+import { messages } from './messages';
+import {
+  DescriptionContainer,
+  HeaderContainer,
+  StyledContainer,
+  StyledTextContainer,
+  TopContainer,
+} from './styles';
+import { CardProps } from './types';
 
 export const Card: FC<CardProps> = ({ accountantInfo }) => {
   const { textData } = useAccountantInfo(accountantInfo);

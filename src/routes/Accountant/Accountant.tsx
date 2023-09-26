@@ -1,8 +1,10 @@
-import { Button } from 'components/Button';
 import { FC } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { messages } from './messages';
+
+import { Button } from 'components/Button';
 import { Text } from 'components/Text';
+
+import { messages } from './messages';
 
 export const Accountant: FC = () => {
   const navigate = useNavigate();
